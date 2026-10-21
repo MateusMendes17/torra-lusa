@@ -6,4 +6,4 @@ Disallow: /checkout.html
 Disallow: /confirmacao.html
 Disallow: /design-system.html
 
-Sitemap: https://www.torralusa.pt/sitemap.xml
+Sitemap: https://torra-lusa.vercel.app/sitemap.xml

@@ -68,12 +68,12 @@ const updateHead = () => {
   setMetaContent('meta[name="description"]', description);
   setMetaContent('meta[property="og:title"]', title);
   setMetaContent('meta[property="og:description"]', description);
-  setMetaContent('meta[property="og:image"]', `https://www.torralusa.pt/${product.images[0].src}`);
-  setMetaContent('meta[property="og:url"]', `https://www.torralusa.pt/produto.html?id=${product.id}`);
+  setMetaContent('meta[property="og:image"]', `https://torra-lusa.vercel.app/${product.images[0].src}`);
+  setMetaContent('meta[property="og:url"]', `https://torra-lusa.vercel.app/produto.html?id=${product.id}`);
   setMetaContent('meta[name="twitter:title"]', title);
   setMetaContent('meta[name="twitter:description"]', description);
   const canonical = qs('link[rel="canonical"]');
-  if (canonical) canonical.setAttribute("href", `https://www.torralusa.pt/produto.html?id=${product.id}`);
+  if (canonical) canonical.setAttribute("href", `https://torra-lusa.vercel.app/produto.html?id=${product.id}`);
 };
 
 const addStructuredData = () => {
@@ -84,13 +84,13 @@ const addStructuredData = () => {
     "@type": "Product",
     name: product.name,
     description: product.description,
-    image: product.images.map((image) => `https://www.torralusa.pt/${image.src}`),
+    image: product.images.map((image) => `https://torra-lusa.vercel.app/${image.src}`),
     sku: `TL-${product.id.toUpperCase()}`,
     brand: { "@type": "Brand", name: "Torra Lusa" },
     category: CATEGORIES[product.category]?.label,
     offers: {
       "@type": "Offer",
-      url: `https://www.torralusa.pt/produto.html?id=${product.id}`,
+      url: `https://torra-lusa.vercel.app/produto.html?id=${product.id}`,
       priceCurrency: "EUR",
       price: format.price.toFixed(2),
       availability: isAvailable(product)
@@ -118,19 +118,19 @@ const addStructuredData = () => {
         "@type": "ListItem",
         position: 1,
         name: "Início",
-        item: "https://www.torralusa.pt/index.html",
+        item: "https://torra-lusa.vercel.app/index.html",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Loja",
-        item: "https://www.torralusa.pt/loja.html",
+        item: "https://torra-lusa.vercel.app/loja.html",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: product.name,
-        item: `https://www.torralusa.pt/produto.html?id=${product.id}`,
+        item: `https://torra-lusa.vercel.app/produto.html?id=${product.id}`,
       },
     ],
   };

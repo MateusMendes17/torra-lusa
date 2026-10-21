@@ -23,6 +23,13 @@ php -S localhost:4173
 
 Não é necessário instalar dependências, executar build ou configurar variáveis de ambiente.
 
+## Publicação
+
+- Produção: <https://torra-lusa.vercel.app>
+- Repositório: <https://github.com/MateusMendes17/torra-lusa>
+
+O projeto está ligado ao GitHub e à Vercel. Cada push para `main` deve gerar um novo deployment de produção. Se for ligado um domínio próprio, atualiza os `canonical`, as URLs Open Graph e de JSON-LD, `sitemap.xml`, `robots.txt` e as referências em `js/product.js`.
+
 ## Percurso disponível
 
 1. `index.html` — entrada editorial, destaques, subscrição e histórias de origem.
@@ -153,7 +160,7 @@ Antes de publicar, testa com leitor de ecrã, zoom a 200 %, navegação apenas p
 
 ## SEO
 
-Cada página indexável inclui metadados, Open Graph e canonical. A homepage, a loja, o produto e a FAQ incluem JSON-LD. `sitemap.xml` e `robots.txt` apontam para `https://www.torralusa.pt`; se o domínio mudar, atualiza também todos os `canonical` e URLs Open Graph.
+Cada página indexável inclui metadados, Open Graph e canonical. A homepage, a loja, o produto e a FAQ incluem JSON-LD. `sitemap.xml` e `robots.txt` apontam para `https://torra-lusa.vercel.app`; se o domínio mudar, atualiza também todos os `canonical` e URLs Open Graph.
 
 Carrinho, checkout, confirmação e design system estão marcados como `noindex`. O checkout e a confirmação usam `nofollow`. A página de produto é dinâmica: atualiza o `canonical` e o `og:url` com o parâmetro `?id=` e as 18 variantes estão incluídas no `sitemap.xml`. Numa loja real, valeria a pena avaliar URLs de produto sem parâmetros, por exemplo `/produto/etiopia-guji`.
 
