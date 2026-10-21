@@ -1,0 +1,18 @@
+# Vercel
+.vercel/
+
+# Dependências e outputs de build
+node_modules/
+dist/
+build/
+
+# Ambiente
+.env
+.env.*
+!.env.example
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

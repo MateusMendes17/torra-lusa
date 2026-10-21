@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design system — Torra Lusa</title>
+  <meta name="description" content="Sistema visual da Torra Lusa: cores, tipografia, botões, formulários, etiquetas e componentes de interface.">
+  <meta name="theme-color" content="#f6efe4">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.torralusa.pt/design-system.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:site_name" content="Torra Lusa">
+  <meta property="og:title" content="Design system — Torra Lusa">
+  <meta property="og:description" content="O ritual luso: café, papel, luz natural e artesanato.">
+  <meta property="og:url" content="https://www.torralusa.pt/design-system.html">
+  <meta property="og:image" content="https://www.torralusa.pt/images/hero-ritual.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="design-system">
+  <div data-site-header></div>
+
+  <main id="conteudo">
+    <section class="ds-hero" aria-labelledby="ds-title">
+      <div class="container">
+        <span class="eyebrow eyebrow--plain">Documentação visual</span>
+        <h1 id="ds-title">O ritual luso.</h1>
+        <p>O sistema visual da Torra Lusa nasce do café, do papel e da luz natural. Uma linguagem editorial, calorosa e sem ruído, pensada para deixar o produto e as histórias de origem em primeiro plano.</p>
+        <nav class="ds-nav" aria-label="Secções do design system">
+          <a href="#cores">Cores</a>
+          <a href="#tipografia">Tipografia</a>
+          <a href="#botoes">Botões</a>
+          <a href="#etiquetas">Etiquetas</a>
+          <a href="#formularios">Formulários</a>
+          <a href="#componentes">Componentes</a>
+          <a href="#acessibilidade">Acessibilidade</a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="ds-section" id="cores" aria-labelledby="cores-title">
+        <h2 id="cores-title">Cores</h2>
+        <p class="ds-label">Base quente, contraste alto e caramelo reservado à compra.</p>
+        <div class="ds-swatches">
+          <div class="ds-swatch"><span class="ds-swatch__color" style="background:#2b1b12"></span><strong>Café</strong><span>#2B1B12 · Ink</span></div>
+          <div class="ds-swatch"><span class="ds-swatch__color" style="background:#c47a3d"></span><strong>Caramelo</strong><span>#C47A3D · Ação</span></div>
+          <div class="ds-swatch"><span class="ds-swatch__color" style="background:#f6efe4"></span><strong>Creme</strong><span>#F6EFE4 · Fundo</span></div>
+          <div class="ds-swatch"><span class="ds-swatch__color" style="background:#fffdf9"></span><strong>Papel</strong><span>#FFFDF9 · Cartões</span></div>
+          <div class="ds-swatch"><span class="ds-swatch__color" style="background:#5c6b3a"></span><strong>Oliva</strong><span>#5C6B3A · Apoio</span></div>
+          <div class="ds-swatch"><span class="ds-swatch__color" style="background:#6b5b4f"></span><strong>Castanha</strong><span>#6B5B4F · Texto suave</span></div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="tipografia" aria-labelledby="tipografia-title">
+        <h2 id="tipografia-title">Tipografia</h2>
+        <div class="ds-grid">
+          <div class="ds-grid ds-type" style="grid-template-columns:1fr;gap:1.4rem">
+            <div>
+              <p class="ds-label">Fraunces · Display</p>
+              <p style="font-family:var(--font-display);font-size:clamp(2.8rem,2rem+3vw,4.6rem);line-height:.95;letter-spacing:-.04em">Uma pausa bem servida.</p>
+            </div>
+            <div>
+              <p class="ds-label">DM Sans · Corpo</p>
+              <p style="max-width:52ch">Torramos pequenos lotes todas as semanas, escolhidos pela doçura e pela história de quem os cultiva. Sem pressa, sem atalhos.</p>
+            </div>
+            <div>
+              <p class="ds-label">Escala</p>
+              <p style="font-size:1.4rem">Título de apoio · 1.4 rem</p>
+              <p style="font-size:1rem">Corpo de texto · 1 rem</p>
+              <p style="font-size:.72rem;letter-spacing:.12em;text-transform:uppercase">Eyebrow / label · .72 rem</p>
+            </div>
+          </div>
+          <div class="ds-component-box">
+            <h3>A regra da casa</h3>
+            <p class="text-small" style="color:var(--ink-soft)">O display cria pausas; o corpo explica. Nunca usar Fraunces em botões ou parágrafos longos. O caramelo só aparece em ações de compra e nos acentos editoriais mais importantes.</p>
+            <p class="eyebrow mt-2">Sem ruído</p>
+            <h3 class="mt-1" style="font-size:1.7rem">Uma ideia por secção.</h3>
+            <p class="text-small mt-1" style="color:var(--ink-soft)">Espaço em branco é parte do design. As imagens têm sombra e raio generosos; as linhas são finas e pontilhadas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="botoes" aria-labelledby="botoes-title">
+        <h2 id="botoes-title">Botões e ações</h2>
+        <div class="ds-grid">
+          <div class="ds-component-box">
+            <h3>Principais</h3>
+            <div class="ds-row">
+              <button class="btn" type="button">Encontrar o meu café</button>
+              <button class="btn btn--outline" type="button">Saber mais</button>
+              <button class="btn btn--text" type="button">Ver todos</button>
+            </div>
+            <p class="text-small mt-2" style="color:var(--ink-soft)">Altura mínima de 52 px; caramelo apenas no botão principal. O botão outline serve para ações secundárias e o texto para navegação leve.</p>
+          </div>
+          <div class="ds-component-box">
+            <h3>Tamanhos e estados</h3>
+            <div class="ds-row">
+              <button class="btn btn--sm" type="button">Pequeno</button>
+              <button class="btn btn--outline btn--sm" type="button">Pequeno outline</button>
+              <button class="btn" type="button" disabled>Esgotado</button>
+            </div>
+            <p class="text-small mt-2" style="color:var(--ink-soft)">Estados de foco usam contorno oliva de 3 px. Nunca remover o foco visível.</p>
+          </div>
+          <div class="ds-component-box ds-dark-demo">
+            <span class="eyebrow eyebrow--plain">Sobre café</span>
+            <h3 class="mt-2" style="color:var(--cream);font-size:1.6rem">Contraste em fundo escuro.</h3>
+            <div class="ds-row mt-2">
+              <button class="btn btn--sm" type="button">Comprar</button>
+              <button class="btn btn--ghost-light btn--sm" type="button">Ver detalhes</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="etiquetas" aria-labelledby="etiquetas-title">
+        <h2 id="etiquetas-title">Etiquetas, notas e avaliações</h2>
+        <div class="ds-grid">
+          <div class="ds-component-box">
+            <h3>Notas de prova</h3>
+            <div class="ds-labels">
+              <span class="note-label">Chocolate</span>
+              <span class="note-label">Avelã</span>
+              <span class="note-label">Laranja</span>
+              <span class="note-label">Flor de laranjeira</span>
+            </div>
+            <h3 class="mt-3" style="font-size:1rem">Estados</h3>
+            <div class="ds-labels">
+              <span class="pill pill--olive">Novo</span>
+              <span class="pill pill--outline">Esgotado</span>
+              <span class="product-flag">Mais vendido</span>
+              <span class="product-flag product-flag--low">Últimas unidades</span>
+            </div>
+          </div>
+          <div class="ds-component-box">
+            <h3>Avaliações</h3>
+            <span class="rating" aria-label="Avaliação 4,8 de 5, 126 avaliações"><span class="rating__stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.9 6.3.7-4.7 4.4 1.3 6.2L12 17l-5.6 3.2L7.7 14 3 9.6l6.3-.7L12 3Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.9 6.3.7-4.7 4.4 1.3 6.2L12 17l-5.6 3.2L7.7 14 3 9.6l6.3-.7L12 3Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.9 6.3.7-4.7 4.4 1.3 6.2L12 17l-5.6 3.2L7.7 14 3 9.6l6.3-.7L12 3Z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.9 6.3.7-4.7 4.4 1.3 6.2L12 17l-5.6 3.2L7.7 14 3 9.6l6.3-.7L12 3Z"/></svg><svg viewBox="0 0 24 24" class="is-empty"><path d="m12 3 2.7 5.9 6.3.7-4.7 4.4 1.3 6.2L12 17l-5.6 3.2L7.7 14 3 9.6l6.3-.7L12 3Z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span><span>(126)</span></span>
+            <p class="text-small mt-2" style="color:var(--ink-soft)">As estrelas nunca são o único indicador: o número de avaliações e o texto estão sempre associados.</p>
+          </div>
+          <div class="ds-component-box">
+            <h3>Marcas de pagamento</h3>
+            <div class="footer-payments" style="margin-top:0">
+              <span class="payment-mark">Visa</span>
+              <span class="payment-mark">MC</span>
+              <span class="payment-mark">MB WAY</span>
+              <span class="payment-mark">Multibanco</span>
+              <span class="payment-mark">PayPal</span>
+            </div>
+            <p class="text-small mt-3" style="color:var(--ink-soft)">Pagamentos simulados. Nenhuma marca representa integração real nesta demonstração.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="formularios" aria-labelledby="formularios-title">
+        <h2 id="formularios-title">Formulários</h2>
+        <div class="ds-grid">
+          <div class="ds-component-box">
+            <h3>Campo padrão</h3>
+            <div class="ds-form-demo">
+              <div class="field">
+                <label class="field__label" for="ds-email">Email</label>
+                <input class="input" id="ds-email" type="email" placeholder="o.teu@email.pt">
+                <span class="field__hint">Nunca partilhamos o teu email.</span>
+              </div>
+            </div>
+          </div>
+          <div class="ds-component-box">
+            <h3>Seleção</h3>
+            <div class="ds-form-demo">
+              <div class="field">
+                <label class="field__label" for="ds-select">Método de envio</label>
+                <div class="select-wrap">
+                  <select class="select" id="ds-select">
+                    <option>CTT Standard · 3,90 €</option>
+                    <option>Entrega Expresso · 6,50 €</option>
+                    <option>Levantamento na loja · grátis</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ds-component-box">
+            <h3>Escolha e checkbox</h3>
+            <label class="checkbox">
+              <input type="checkbox" checked>
+              <span class="checkbox__box" aria-hidden="true"></span>
+              <span>Aceito receber a carta da torra.</span>
+            </label>
+            <div class="ds-row mt-3">
+              <label class="choice-card" style="width:100%">
+                <input type="radio" name="ds-ship" checked>
+                <span class="choice-card__control" aria-hidden="true"></span>
+                <span class="choice-card__body"><span class="choice-card__title"><span>CTT Standard</span><span class="choice-card__free">Grátis</span></span><span class="choice-card__description">Entrega em 2–4 dias úteis</span></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="componentes" aria-labelledby="componentes-title">
+        <h2 id="componentes-title">Componentes editoriais</h2>
+        <div class="ds-grid">
+          <article class="value-card">
+            <span class="value-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4c-8 0-14 3.5-14 10a5 5 0 0 0 5 5c6.5 0 9-6 9-15Z"/><path d="M4 21c2.8-5.5 6.5-9 12-12"/></svg>
+            </span>
+            <h3>Origem antes de marketing</h3>
+            <p>O nome de quem cultivou vai na etiqueta. Pagamos acima do preço de mercado e mantemos relações de longo prazo.</p>
+          </article>
+          <div class="ds-component-box">
+            <h3>Acordeão</h3>
+            <div class="accordion">
+              <div class="accordion__item">
+                <h3 style="font-family:var(--font-body);font-size:.9rem"><button class="accordion__button" type="button" aria-expanded="false" aria-controls="ds-accordion-panel">Como funciona a subscrição?<span class="accordion__symbol" aria-hidden="true">+</span></button></h3>
+                <div class="accordion__panel" id="ds-accordion-panel" aria-hidden="true">
+                  <div class="accordion__inner"><div class="accordion__content">Escolhes o café, o formato, a moagem e a periodicidade. Recebes com 10 % de desconto e podes pausar ou cancelar quando quiseres.</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ds-component-box ds-dark-demo">
+            <span class="eyebrow eyebrow--plain">Carimbo da casa</span>
+            <p class="mt-2" style="font-family:var(--font-display);font-size:2rem;line-height:1.05;color:var(--cream)">Torrado esta semana.<br><em style="color:rgba(246,239,228,.7)">Sem pressa.</em></p>
+            <div class="stamp stamp--light mt-3" aria-hidden="true" style="position:static;margin-top:1.5rem">
+              <svg viewBox="0 0 120 120" fill="none">
+                <circle cx="60" cy="60" r="57" stroke="currentColor" stroke-width="1"/>
+                <circle cx="60" cy="60" r="49" stroke="currentColor" stroke-width="1" stroke-dasharray="1 4" opacity=".6"/>
+                <text x="60" y="56" text-anchor="middle" fill="currentColor" font-size="7" font-family="DM Sans, sans-serif" letter-spacing="1.5">TORRA LUSA</text>
+                <text x="60" y="75" text-anchor="middle" fill="currentColor" font-size="23" font-family="Fraunces, Georgia, serif">042</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="acessibilidade" aria-labelledby="acessibilidade-title">
+        <h2 id="acessibilidade-title">Acessibilidade e movimento</h2>
+        <div class="ds-grid">
+          <div class="ds-component-box">
+            <h3>Princípios</h3>
+            <ul class="text-small" style="color:var(--ink-soft);display:grid;gap:.45rem">
+              <li>Contraste mínimo WCAG AA para texto e componentes.</li>
+              <li>Foco visível em todos os elementos interativos.</li>
+              <li>Estrutura semântica, landmarks e hierarquia de títulos.</li>
+              <li>Alvos de toque com pelo menos 44 × 44 px.</li>
+            </ul>
+          </div>
+          <div class="ds-component-box">
+            <h3>Teclado</h3>
+            <p class="text-small" style="color:var(--ink-soft)">Tab percorre links, botões, campos e acordeões. Escape fecha o menu, a pesquisa, o carrinho e os diálogos. O foco é sempre devolvido ao elemento que abriu a camada.</p>
+          </div>
+          <div class="ds-component-box">
+            <h3>Movimento reduzido</h3>
+            <p class="text-small" style="color:var(--ink-soft)">Com <code>prefers-reduced-motion: reduce</code>, as revelações, transições e deslocamentos são desativados. O conteúdo nunca depende de animação para ser lido.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="ds-footer-title">
+        <div class="faq-help">
+          <div>
+            <span class="eyebrow">Nota de implementação</span>
+            <h2 id="ds-footer-title" class="mt-2" style="font-size:clamp(1.6rem,1.35rem+1.2vw,2.3rem)">Tudo em HTML, CSS e módulos nativos.</h2>
+            <p class="mt-2">Sem frameworks, sem backend e sem dependências de build. As imagens são placeholders locais e devem ser substituídas por fotografia própria antes da publicação.</p>
+          </div>
+          <a class="btn" href="index.html">Ver a loja</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div data-site-footer></div>
+  <div data-site-cart></div>
+  <div data-site-floating></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

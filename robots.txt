@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /carrinho.html
+Disallow: /checkout.html
+Disallow: /confirmacao.html
+Disallow: /design-system.html
+
+Sitemap: https://www.torralusa.pt/sitemap.xml
